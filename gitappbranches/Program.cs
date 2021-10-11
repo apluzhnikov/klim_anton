@@ -10,8 +10,15 @@ namespace gitappbranches
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("hi Anton");
+            if (args != null && args.Count() > 0)
+                Console.WriteLine($"hi {args[0]}");
+            else
+            {
+                Console.WriteLine("There are noone to greet, please enter a name");
+                var name = Console.ReadLine();
+                if (!string.IsNullOrWhiteSpace(name))
+                    Console.WriteLine($"hi {name}");
+            }
             Console.ReadLine();
         }
     }
