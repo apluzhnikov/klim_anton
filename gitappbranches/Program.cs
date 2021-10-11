@@ -11,7 +11,7 @@ namespace gitappbranches
         static void Main(string[] args)
         {
 
-            Console.WriteLine("hi hi");
+            Console.WriteLine("hi Anton");
             Console.ReadLine();
         }
     }
